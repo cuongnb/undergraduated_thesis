@@ -1,0 +1,169 @@
+\documentclass[fontsize=13pt]{scrartcl}
+\usepackage[utf8]{vietnam}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage{url}
+\usepackage{subfig}
+\usepackage{graphicx}
+\usepackage[top=3cm, bottom=3cm, left=4cm, right=3cm]{geometry}
+\renewcommand{\baselinestretch}{1.2}
+\setcounter{page}{3}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,urlcolor=black,linkcolor=black}
+\usepackage{changepage}
+\usepackage{framed}
+
+\newcommand{\bigCI}{\mathrel{\text{\scalebox{1.07}{$\perp\mkern-10mu\perp$}}}}
+
+\lhead{}
+\chead{}
+\rhead{}
+\renewcommand{\footrulewidth}{0.4pt}
+\lfoot{Nguyễn Bá Cương KSTN-CNTT K57}
+\cfoot{}
+\rfoot{\thepage}
+
+\begin{document}
+
+\newpage
+\begin{center}
+\textbf{Lời cảm ơn}
+\end{center}
+Đầu tiên, em xin được gửi lời cảm ơn chân thành đến các thầy giáo, cô giáo thuộc trường đại học Bách Khoa Hà Nội, đặc biệt là các thầy giáo, cô giáo thuộc Viện Công nghệ Thông tin và Truyền Thông. Thầy cô là người đã trang bị cho em những kiến thức quý báu trong thời gian em học tập tại trường.
+\par
+Em xin gửi lời cảm ơn sâu sắc tới thầy Ngô Văn Linh, người đã chỉ dẫn tận tình cho em trong suốt thời gian dài học tập tại trường. Thầy đã truyền đạt cho em rất nhiều kiến thức về topic modeling cũng như và nhiều chủ đề thú vị khác trong học máy. Thầy là người đã truyền cho em niềm hứng thú, sự đam mê tìm hiểu về học máy nói chung và topic modeling nói riêng từ đó dẫn đến sự hình thành của đồ án này. Thầy cũng là người trực tiếp hướng dẫn em trong quá trình thực hiện đồ án.
+\par 
+
+Em cũng xin gửi lời cảm ơn tới anh Mai Tiến Khải đã cũng cấp bộ dữ liệu quý giá giúp em có thể chạy thử nghiệm từ đó đánh giá phương pháp được đề xuất.
+
+\newpage
+\begin{abstract}
+\begin{center}
+\textbf{Tóm tắt đồ án}
+\end{center}
+Ngày nay dữ liệu văn bản được sinh ra ngày càng nhiều thông qua các trang mạng xã hội, các diễn đàn và các dịch vụ chat, nhắn tin trực tuyến. Tuy nhiên, các dữ liệu này đều có chung một đặc điểm là lượng dữ liệu rất nhiều tuy nhiến độ dài của mỗi văn bản thường rất ngắn (gọi là short text). Điều này làm cho bài toán mô hình hóa chủ đề trở nên khó khăn hơn vì chi phí tính toán và đặc biệt là thiếu các thông tin thống kê về ngữ cảnh. Các phương pháp mô hình hóa chủ đề cổ điển như Latent Dirichlet Allocation (LDA) tuy có thể được thích ứng để làm việc với lượng dữ liệu lớn nhưng lại chịu ảnh hưởng của tính thưa của dữ liệu, điều này làm cho kết quả thu được từ LDA vẫn chưa thực sự đáp ứng được yêu cầu thực tế.
+\par
+
+Một trong những phương pháp mô hình hóa chủ đề cho văn bản ngắn đang nhận được nhiều sự chú ý trong thời gian gần đầy là mô hình Biterm. Mô hình đã chứng minh được sự hiệu quả của mình khi làm việc với short text. Trong đồ án này, em sẽ phát triển dạng Online cho mô hình Biterm, cho phép mô hình có thể hoạt động với lượng dữ liệu lớn. Đánh giá về thời gian chạy và chất lượng chủ đề cũng sẽ được trình bày.
+\end{abstract}
+
+%~ \newpage
+%~ \begin{abstract}
+%~ \begin{center}
+%~ \textbf{Abstract}
+%~ \end{center}
+%~ \end{abstract}
+
+\newpage
+\tableofcontents
+
+\newpage
+\textbf{Danh sách các từ viết tắt và thuật ngữ}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+LDA & Latent Dirichlet Allocation \\
+\hline
+PLSA & Probabilistic Latent Semantic Analysis\\
+\hline
+BTM & Biterm Topic Model\\
+\hline
+Dir & Phân phối Dirichlet \\
+\hline
+Mult & Phân phối Multinomial \\
+\hline
+ML & Maximum Likelihood \\
+\hline
+MAP & Maximum A Posteriori \\
+\hline
+NPMI & Normalized Pointwise Mutual Information\\
+\hline 
+LPBP & Trung bình log xác suất sinh ra một biterm \\
+\hline
+Corpus & Tập các văn bản\\
+\hline
+Doc & Văn bản \\
+\hline
+Topic & Chủ đề\\
+\hline
+Posterior distribution & phân phối hậu nghiệm \\
+\hline
+Prior distribution & Phân phối tiền nghiệm \\
+\hline
+Stochastic Optimization & Tối ưu hóa ngẫu nhiên \\
+\hline
+argmax & Giá trị tham số làm biểu thức lớn nhất \\
+\hline
+Parameter & Tham số \\
+\hline
+Hyperparameter & Siêu tham số \\
+\hline 
+NYTT & Tập dữ liệu NewYorkTimes Title \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+\textbf{Danh sách các kí hiệu dùng trong đồ án}
+\begin{table}[H]
+\begin{tabular}{|l|l|}
+\hline
+$\Gamma$ & hàm Gamma \\ \hline
+$\sim$ & ``tuân theo phân phối'' \\ \hline
+$\propto$ & ``tỉ lệ với'' \\ \hline
+
+\end{tabular}
+\end{table}
+
+\newpage
+\listoffigures
+
+\newpage
+\listoftables
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Giới thiệu Đề Tài}
+
+\section{Cơ sở lý thuyết}
+\subsection{Mô hình chủ đề}
+\subsubsection{Những khái niệm trong mô hình chủ đề}
+\textit{\textbf{Khái niệm về chủ đề:}} Một chủ đề của dữ liệu có thể được hiểu theo định nghĩa thông thường, chẳng hạn như chủ đề về thể thao, chủ đề về chính trị, văn hóa, giáo dục ... Căn cứ vào đâu để biết một văn bản thuộc chủ đề nào ? Chính là căn cứ vào những từ xuất hiện trong văn bản mà ta có thể xác định chúng thuộc chủ đề gì. Nếu trong văn bản có chứa các từ như: \textit{bóng đá, cầu thủ,trọng tài, thủ môn, hậu vệ ...} thì có thể nói là văn bản thuộc về chủ đề thể thao chứ không thể là thuộc về chủ đề về ẩm thực được. Như vậy có thể thầy bản chất của chủ đề là tập các từ mà chúng cùng xuất hiện với nhau một các thường xuyên trong một văn bản, mà khi nhìn vào văn bản đó ta thấy được sự nổi lên hẳn của các từ cùng xuất này và kết luận về chủ đề của nó. Trong mô hình chủ đề, cùng tư tưởng như vậy, một chủ đề cũng là tập các từ thường xuyên xuất hiện với nhau trong một văn bản nhưng được biểu diễn ở dạng toán học: một chủ đề được biểu diễn bằng một phân phối các từ trong tập từ điển, các từ khác nhau. Ví dụ như chủ đề về thể thao thì xác suất của từ \textit{"bóng đá"} cao hơn xác suất của từ \textit{"nhà hàng"} ngược lại thì chủ đề về ẩm thực thì xác suất của từ \textit{"nhà hàng"} có xác suất lớn hơn so với từ \textit{"bóng đá"}.
+\par
+\textbf{\textit{Vector tỉ lệ chủ để:}} Một bài báo thường có nhiều hơn một chủ đề, ví dụ như có những bài báo viết về chủ đề thể thao có liên quan đến chủ đề sức khỏe, thâm chí nó có các nội dung liên quan đến pháp luật chính trị. Giả sử như có $K$ chủ đề, một văn bản sẽ là một phân phối trên $K$ chủ đề n. Trong mô hình chủ đề, ta giả sử mỗi văn bản là tập trộn các chủ đề,
+
+\subsubsection{Mô hình chủ đề cho văn bản có độ dài bình thường}
+\subsubsection{Mô hình chủ đề cho văn bản có độ dài ngắn}
+\subsection{Gibbs sampling}
+\subsection{Thuật toán Expectation-Maximization}
+\section{Mô hình Biterm}
+\subsection{Giớ thiệu về mô hình Biterm}
+\subsubsection{Quá trình sinh Biterm}
+\subsubsection{Mô tả Mô hình}
+\subsection{Ước lượng tham số}
+\subsubsection{Thuật toán Gibbs Sampling cho BTM}
+\subsubsection{Thuật toán EM cho BTM}
+\subsection{Xác định chủ đề cho mỗi văn bẳn trong mô hình Biterm}
+\subsection{Thuật toán Online cho BTM}
+\subsubsection{Thuật toán Gibbs Sampling}
+\subsubsection{Thuật toán EM}
+\section{Thử nghiệm và đánh giá}
+\subsection{Dữ liệu huấn luyện và kiểm thử}
+\subsection{Các độ được sử dụng}
+\subsubsection{Độ đo perplexity}
+\subsubsection{Độ đo NPMI}
+\subsection{Tiến hành thử nghiệm}
+\subsubsection{Thử nghiệm trên tập dữ liệu Tweeter}
+\subsubsection{Thử nghiệm trên tập dữ liệu yahoo}
+\subsubsection{Thử nghiệm trên tập nyt}
+\subsection{Thời gian huấn luyện}
+\section{Kết luận}
+\section{Tài liệu tham khảo}
+\newpage
+\bibliographystyle{plain}
+\bibliography{ref}
+\end{document}

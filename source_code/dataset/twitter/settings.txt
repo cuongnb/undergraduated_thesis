@@ -1,0 +1,26 @@
+num_docs: 1467687
+num_terms: 89474
+num_topics: 50
+batch_size: 5000
+alpha: 0.01
+eta: 0.01
+tau0: 1.0
+kappa: 0.9
+iter_infer: 5
+conv_infer: 1e-2
+iter_train: 5
+burn_in: 25
+samples: 25
+# cvb settings
+num_tokens: 14887465
+tau_phi: 1.0
+kappa_phi: 0.9
+s_phi: 1.0
+tau_theta: 10.0
+kappa_theta: 0.9
+s_theta: 1.0
+beta: 1e-10
+step_count: 0
+step_power: 0.7
+step_offset: 2
+drop_rate: 0.6

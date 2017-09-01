@@ -1,0 +1,10 @@
+\frametitle{My Brand New Algorithm}
+\begin{center}
+\begin{minipage}[t]{0.4\textwidth}
+\begin{algorithmic}
+
+[snip]
+
+\end{algorithmic}
+\end{minipage}
+\end{center}

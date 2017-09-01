@@ -1,0 +1,12 @@
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {1}{Short texts v\IeC {\`a} m\IeC {\^o} h\IeC {\`\i }nh ch\IeC {\h u} \IeC {\dj }\IeC {\`\ecircumflex }}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Short texts}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{C\IeC {\'a}c m\IeC {\^o} h\IeC {\`\i }nh ch\IeC {\h u} \IeC {\dj }\IeC {\`\ecircumflex }}{5}{0}{1}
+\beamer@sectionintoc {2}{Ph\IeC {\uhorn }\IeC {\ohorn }ng ph\IeC {\'a}p h\IeC {\d o}c m\IeC {\'\ohorn }i cho m\IeC {\^o} h\IeC {\`\i }nh BTM}{8}{0}{2}
+\beamer@subsectionintoc {2}{1}{Ph\IeC {\uhorn }\IeC {\ohorn }ng ph\IeC {\'a}p Gibbs-sampling}{9}{0}{2}
+\beamer@subsectionintoc {2}{2}{Ph\IeC {\uhorn }\IeC {\ohorn }ng ph\IeC {\'a}p suy di\IeC {\~\ecircumflex }n bi\IeC {\'\ecircumflex }n ph\IeC {\^a}n}{10}{0}{2}
+\beamer@subsectionintoc {2}{3}{Ph\IeC {\uhorn }\IeC {\ohorn }ng ph\IeC {\'a}p h\IeC {\d o}c ng\IeC {\~\acircumflex }u nhi\IeC {\^e}n}{12}{0}{2}
+\beamer@sectionintoc {3}{Th\IeC {\h \uhorn } nghi\IeC {\d \ecircumflex }m - \IeC {\DJ }\IeC {\'a}nh gi\IeC {\'a}}{16}{0}{3}
+\beamer@subsectionintoc {3}{1}{D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u th\IeC {\h \uhorn } nghi\IeC {\d \ecircumflex }m}{17}{0}{3}
+\beamer@subsectionintoc {3}{2}{K\IeC {\'\ecircumflex }t qu\IeC {\h a} th\IeC {\h \uhorn } nghi\IeC {\d \ecircumflex }m}{19}{0}{3}
+\beamer@sectionintoc {4}{K\IeC {\'\ecircumflex }t lu\IeC {\d \acircumflex }n}{23}{0}{4}

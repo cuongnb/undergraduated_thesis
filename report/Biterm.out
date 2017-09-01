@@ -1,0 +1,31 @@
+\BOOKMARK [1][-]{section.1}{Gii thiu \320 T\340i}{}% 1
+\BOOKMARK [1][-]{section.2}{C s l\375 thuyt}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{M\364 h\354nh chu }{section.2}% 3
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Nhng kh\341i nim trong m\364 h\354nh chu }{subsection.2.1}% 4
+\BOOKMARK [3][-]{subsubsection.2.1.2}{M\364 h\354nh chu \040cho van ban c\363 \040d\340i b\354nh thng}{subsection.2.1}% 5
+\BOOKMARK [3][-]{subsubsection.2.1.3}{M\364 h\354nh chu \040cho van ban c\363 \040d\340i ngn}{subsection.2.1}% 6
+\BOOKMARK [2][-]{subsection.2.2}{Gibbs sampling}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.3}{Thut to\341n Expectation-Maximization}{section.2}% 8
+\BOOKMARK [1][-]{section.3}{M\364 h\354nh Biterm}{}% 9
+\BOOKMARK [2][-]{subsection.3.1}{Gi thiu v m\364 h\354nh Biterm}{section.3}% 10
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Qu\341 tr\354nh sinh Biterm}{subsection.3.1}% 11
+\BOOKMARK [3][-]{subsubsection.3.1.2}{M\364 ta M\364 h\354nh}{subsection.3.1}% 12
+\BOOKMARK [2][-]{subsection.3.2}{c lng tham s}{section.3}% 13
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Thut to\341n Gibbs Sampling cho BTM}{subsection.3.2}% 14
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Thut to\341n EM cho BTM}{subsection.3.2}% 15
+\BOOKMARK [2][-]{subsection.3.3}{X\341c inh chu \040cho mi van bn trong m\364 h\354nh Biterm}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.4}{Thut to\341n Online cho BTM}{section.3}% 17
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Thut to\341n Gibbs Sampling}{subsection.3.4}% 18
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Thut to\341n EM}{subsection.3.4}% 19
+\BOOKMARK [1][-]{section.4}{Th nghim v\340 \341nh gi\341}{}% 20
+\BOOKMARK [2][-]{subsection.4.1}{D liu hun luyn v\340 kim th}{section.4}% 21
+\BOOKMARK [2][-]{subsection.4.2}{C\341c \040c s dung}{section.4}% 22
+\BOOKMARK [3][-]{subsubsection.4.2.1}{\320 o perplexity}{subsection.4.2}% 23
+\BOOKMARK [3][-]{subsubsection.4.2.2}{\320 o NPMI}{subsection.4.2}% 24
+\BOOKMARK [2][-]{subsection.4.3}{Tin h\340nh th nghim}{section.4}% 25
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Th nghim tr\352n tp d liu Tweeter}{subsection.4.3}% 26
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Th nghim tr\352n tp d liu yahoo}{subsection.4.3}% 27
+\BOOKMARK [3][-]{subsubsection.4.3.3}{Th nghim tr\352n tp nyt}{subsection.4.3}% 28
+\BOOKMARK [2][-]{subsection.4.4}{Thi gian hun luyn}{section.4}% 29
+\BOOKMARK [1][-]{section.5}{Kt lun}{}% 30
+\BOOKMARK [1][-]{section.6}{T\340i liu tham khao}{}% 31
